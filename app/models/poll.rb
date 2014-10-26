@@ -1,7 +1,5 @@
 class Poll < ActiveRecord::Base
-	validates :title, presence: true, uniqueness: true
-	validates :author_id, presence: true
-
+	validates :author_id, :title, presence: true
 	belongs_to(
 		:author,
 		class_name: "User",
@@ -13,6 +11,6 @@ class Poll < ActiveRecord::Base
 		:questions,
 		class_name: "Question",
 		foreign_key: :poll_id,
-		primary_key: id
+		primary_key: :id
 	)
-end	
+end

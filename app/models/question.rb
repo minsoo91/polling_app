@@ -1,4 +1,4 @@
-class Question << ActiveRecord::Base
+class Question < ActiveRecord::Base
 	validates :question_text, presence: true
 	validates :poll_id, presence: true
 
@@ -14,5 +14,11 @@ class Question << ActiveRecord::Base
 		class_name: "AnswerChoice",
 		foreign_key: :question_id,
 		primary_key: :id
+	)
+
+	has_many(
+		:responses,
+		through: :answer_choices,
+		source: :responses
 	)
 end

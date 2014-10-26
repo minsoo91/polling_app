@@ -35,3 +35,281 @@ Migrating to CreateResponses (20141025234133)
   [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141025234133"]]
   [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "polls" ("author_id", "title") VALUES (?, ?)  [["author_id", 8], ["title", "quod"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "polls" ("author_id", "title") VALUES (?, ?)[0m  [["author_id", 8], ["title", "voluptatem"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "polls" ("author_id", "title") VALUES (?, ?)  [["author_id", 4], ["title", "quo"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "polls" ("author_id", "title") VALUES (?, ?)[0m  [["author_id", 5], ["title", "provident"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "polls" ("author_id", "title") VALUES (?, ?)  [["author_id", 4], ["title", "eligendi"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."user_name" = 'magnus.weber' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("user_name") VALUES (?)  [["user_name", "magnus.weber"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."user_name" = 'cary_terry' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("user_name") VALUES (?)  [["user_name", "cary_terry"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."user_name" = 'justine' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("user_name") VALUES (?)  [["user_name", "justine"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."user_name" = 'woodrow' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("user_name") VALUES (?)  [["user_name", "woodrow"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."user_name" = 'eloise.beier' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("user_name") VALUES (?)  [["user_name", "eloise.beier"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."user_name" = 'kieran_lubowitz' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("user_name") VALUES (?)  [["user_name", "kieran_lubowitz"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."user_name" = 'martin' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("user_name") VALUES (?)  [["user_name", "martin"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."user_name" = 'garry' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("user_name") VALUES (?)  [["user_name", "garry"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."user_name" = 'ibrahim' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("user_name") VALUES (?)  [["user_name", "ibrahim"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."user_name" = 'erwin' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("user_name") VALUES (?)  [["user_name", "erwin"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)  [["poll_id", 1], ["question_text", "Perferendis fuga a sequi sit expedita."]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)[0m  [["poll_id", 4], ["question_text", "Cumque non accusamus porro dolor soluta quo quas."]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)  [["poll_id", 1], ["question_text", "Aperiam qui ipsa laboriosam est asperiores."]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)[0m  [["poll_id", 1], ["question_text", "Minima et tenetur enim omnis distinctio ratione laudantium."]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)  [["poll_id", 5], ["question_text", "Est et eos repellat repudiandae quibusdam ut laudantium in."]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)[0m  [["poll_id", 1], ["question_text", "Qui voluptatum esse earum facilis id quam at."]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)  [["poll_id", 4], ["question_text", "Qui tempore tenetur consequatur aut sapiente inventore id et."]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)[0m  [["poll_id", 4], ["question_text", "In ipsam magnam quaerat nostrum atque odio et."]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)  [["poll_id", 3], ["question_text", "Occaecati unde cupiditate accusantium nostrum totam et aut."]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)[0m  [["poll_id", 4], ["question_text", "Dolores incidunt qui voluptatem fugiat."]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)  [["poll_id", 3], ["question_text", "Tenetur repudiandae deleniti aliquam doloribus voluptas voluptatum dolor."]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (9.6ms)[0m  [1mINSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)[0m  [["poll_id", 4], ["question_text", "Voluptatibus quia dolor atque ut."]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)  [["poll_id", 4], ["question_text", "Rem iusto aspernatur amet."]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)[0m  [["poll_id", 5], ["question_text", "Molestiae eius voluptate assumenda enim eos."]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)  [["poll_id", 5], ["question_text", "Aut modi sed facilis."]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)[0m  [["poll_id", 3], ["question_text", "Eos voluptas aut maiores eum voluptatum nemo dignissimos."]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)  [["poll_id", 5], ["question_text", "Molestias sit recusandae quibusdam aliquam eum nihil perspiciatis asperiores."]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)[0m  [["poll_id", 3], ["question_text", "Recusandae error blanditiis tempore qui similique quae tenetur."]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)  [["poll_id", 2], ["question_text", "Quia eius consequatur maxime."]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "questions" ("poll_id", "question_text") VALUES (?, ?)[0m  [["poll_id", 4], ["question_text", "Eaque ut at sequi non veritatis omnis quibusdam magni."]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)  [["answer_choice_text", "Veritatis porro consequatur repudiandae quas."], ["question_id", 1]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)[0m  [["answer_choice_text", "Aliquid incidunt corrupti eos unde qui deserunt nemo."], ["question_id", 11]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)  [["answer_choice_text", "Magnam ipsum voluptas quibusdam nam aut."], ["question_id", 4]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)[0m  [["answer_choice_text", "Dicta eligendi iusto consequatur aliquam facilis est."], ["question_id", 14]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)  [["answer_choice_text", "Vitae perferendis qui nobis eos voluptatum rerum."], ["question_id", 11]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)[0m  [["answer_choice_text", "Dolore ea laborum at excepturi error perspiciatis provident."], ["question_id", 18]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)  [["answer_choice_text", "Architecto hic et aut autem alias enim."], ["question_id", 14]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)[0m  [["answer_choice_text", "Saepe quo libero nisi omnis culpa."], ["question_id", 12]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)  [["answer_choice_text", "Voluptatem fugiat cupiditate facilis."], ["question_id", 18]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)[0m  [["answer_choice_text", "Eligendi impedit facilis hic dolorem ut."], ["question_id", 7]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)  [["answer_choice_text", "Et hic quaerat iste eligendi libero nulla."], ["question_id", 13]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)[0m  [["answer_choice_text", "Ut ut placeat odit ut perspiciatis."], ["question_id", 10]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)  [["answer_choice_text", "Similique vitae perferendis qui temporibus ut fuga."], ["question_id", 10]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)[0m  [["answer_choice_text", "Ut vel quas pariatur quia eos."], ["question_id", 6]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)  [["answer_choice_text", "Beatae quidem dolores amet."], ["question_id", 2]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)[0m  [["answer_choice_text", "Vel velit in commodi possimus."], ["question_id", 6]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)  [["answer_choice_text", "Ut ducimus voluptas eos facere incidunt."], ["question_id", 17]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)[0m  [["answer_choice_text", "Sit asperiores eos dicta sed iusto dolor eum."], ["question_id", 13]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)  [["answer_choice_text", "Id cupiditate qui doloremque."], ["question_id", 6]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)[0m  [["answer_choice_text", "Accusamus repellat ut ab assumenda placeat in sequi ipsum."], ["question_id", 1]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "responses" ("answer_choice_id", "user_id") VALUES (?, ?)  [["answer_choice_id", 1], ["user_id", 1]]
+  [1m[36m (9.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAnswerChoice Load (0.5ms)[0m  [1mSELECT "answer_choices".* FROM "answer_choices" WHERE "answer_choices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAnswerChoice Load (0.3ms)[0m  SELECT "answer_choices".* FROM "answer_choices" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "responses" ("answer_choice_id", "user_id") VALUES (?, ?)  [["answer_choice_id", 2], ["user_id", 2]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mResponse Load (0.2ms)[0m  SELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mResponse Load (4.0ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (1.1ms)[0m  SELECT "questions".* FROM "questions" INNER JOIN "answer_choices" ON "questions"."id" = "answer_choices"."question_id" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mResponse Load (3.1ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (1.1ms)[0m  SELECT "questions".* FROM "questions" INNER JOIN "answer_choices" ON "questions"."id" = "answer_choices"."question_id" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mResponse Load (0.2ms)[0m  [1mSELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[35mAnswerChoice Load (0.2ms)[0m  SELECT "answer_choices".* FROM "answer_choices"
+  [1m[36mAnswerChoice Load (0.2ms)[0m  [1mSELECT "answer_choices".* FROM "answer_choices" WHERE "answer_choices"."question_id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "answer_choices" ("answer_choice_text", "question_id") VALUES (?, ?)[0m  [["answer_choice_text", "Testing~!"], ["question_id", 1]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mAnswerChoice Load (0.4ms)[0m  [1mSELECT "answer_choices".* FROM "answer_choices" WHERE "answer_choices"."question_id" = 1 LIMIT 1[0m
+  [1m[35mAnswerChoice Load (0.3ms)[0m  SELECT "answer_choices".* FROM "answer_choices" WHERE "answer_choices"."question_id" = 1
+  [1m[36mResponse Load (0.2ms)[0m  [1mSELECT "responses".* FROM "responses"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "responses" ("answer_choice_id", "user_id") VALUES (?, ?)[0m  [["answer_choice_id", 20], ["user_id", 3]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "responses" ("answer_choice_id", "user_id") VALUES (?, ?)  [["answer_choice_id", 21], ["user_id", 4]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mAnswerChoice Load (0.2ms)[0m  SELECT "answer_choices".* FROM "answer_choices" WHERE "answer_choices"."question_id" = 1
+  [1m[36mResponse Load (2.1ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" INNER JOIN "answer_choices" ON "questions"."id" = "answer_choices"."question_id" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mResponse Load (0.2ms)[0m  [1mSELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ?[0m  [["question_id", 1]]
+  [1m[35mResponse Load (0.2ms)[0m  SELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mResponse Load (0.2ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mResponse Load (0.2ms)[0m  SELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mResponse Load (2.5ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions" INNER JOIN "answer_choices" ON "questions"."id" = "answer_choices"."question_id" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mResponse Load (0.2ms)[0m  [1mSELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (id != 1)[0m  [["question_id", 1]]
+SQLite3::SQLException: ambiguous column name: id: SELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (id != 1)
+  [1m[36mResponse Load (3.2ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[36mResponse Load (1.8ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions" INNER JOIN "answer_choices" ON "questions"."id" = "answer_choices"."question_id" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mResponse Load (0.2ms)[0m  [1mSELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (#{responses.id} != 1)[0m  [["question_id", 1]]
+SQLite3::SQLException: unrecognized token: "#": SELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (#{responses.id} != 1)
+  [1m[36mResponse Load (1.8ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" INNER JOIN "answer_choices" ON "questions"."id" = "answer_choices"."question_id" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mResponse Load (0.3ms)[0m  [1mSELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (responses.id != 1)[0m  [["question_id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" INNER JOIN "answer_choices" ON "questions"."id" = "answer_choices"."question_id" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mResponse Load (0.2ms)[0m  [1mSELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (responses.id != NULL)[0m  [["question_id", 11]]
+  [1m[36mResponse Load (1.8ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions" INNER JOIN "answer_choices" ON "questions"."id" = "answer_choices"."question_id" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mResponse Load (0.2ms)[0m  [1mSELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (responses.id != 1)[0m  [["question_id", 1]]
+  [1m[36mResponse Load (3.1ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (9.6ms)[0m  INSERT INTO "responses" ("answer_choice_id", "user_id") VALUES (?, ?)  [["answer_choice_id", 20], ["user_id", 1]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" INNER JOIN "answer_choices" ON "questions"."id" = "answer_choices"."question_id" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 20]]
+  [1m[36mResponse Load (0.2ms)[0m  [1mSELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (responses.id != 5)[0m  [["question_id", 1]]
+  [1m[35mResponse Load (0.4ms)[0m  SELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "responses" WHERE "responses"."id" = ?  [["id", 5]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mResponse Load (0.2ms)[0m  SELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mQuestion Load (0.1ms)[0m  [1mSELECT "questions".* FROM "questions" INNER JOIN "answer_choices" ON "questions"."id" = "answer_choices"."question_id" WHERE "answer_choices"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mResponse Load (0.4ms)[0m  SELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (responses.id != 1)  [["question_id", 1]]
+  [1m[36mResponse Load (0.3ms)[0m  [1mSELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (responses.id != 1) AND (answer_choice_id != 21)[0m  [["question_id", 1]]
+  [1m[35mResponse Load (0.3ms)[0m  SELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (responses.id != 1) AND (responses.user_id != 1)  [["question_id", 1]]
+  [1m[36mResponse Load (0.3ms)[0m  [1mSELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (responses.id != 1) AND (responses.user_id != 1)[0m  [["question_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "responses" ("answer_choice_id", "user_id") VALUES (?, ?)  [["answer_choice_id", 21], ["user_id", 1]]
+  [1m[36m (7.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mAnswerChoice Load (0.3ms)[0m  SELECT "answer_choices".* FROM "answer_choices" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 21]]
+  [1m[36mResponse Load (0.4ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Load (2.7ms)[0m  SELECT "questions".* FROM "questions" INNER JOIN "answer_choices" ON "questions"."id" = "answer_choices"."question_id" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 21]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (responses.id != NULL)[0m  [["question_id", 1]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "responses" ("answer_choice_id", "user_id") VALUES (?, ?)  [["answer_choice_id", 21], ["user_id", 1]]
+  [1m[36m (8.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mAnswerChoice Load (0.3ms)[0m  SELECT "answer_choices".* FROM "answer_choices" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 21]]
+  [1m[36mResponse Load (0.5ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAnswerChoice Load (0.3ms)[0m  SELECT "answer_choices".* FROM "answer_choices" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mQuestion Load (2.8ms)[0m  SELECT "questions".* FROM "questions" INNER JOIN "answer_choices" ON "questions"."id" = "answer_choices"."question_id" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 21]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (responses.user_id != 1)[0m  [["question_id", 1]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mResponse Load (1.9ms)[0m  [1mSELECT "responses".* FROM "responses" WHERE "responses"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT "questions".* FROM "questions" INNER JOIN "answer_choices" ON "questions"."id" = "answer_choices"."question_id" WHERE "answer_choices"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mResponse Load (0.3ms)[0m  [1mSELECT "responses".* FROM "responses" INNER JOIN "answer_choices" ON "responses"."answer_choice_id" = "answer_choices"."id" WHERE "answer_choices"."question_id" = ? AND (responses.user_id != 1) AND (responses.id IS NOT NULL AND responses.id != 1)[0m  [["question_id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
