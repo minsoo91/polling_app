@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Poll::Application.config.secret_key_base = '0d90d9970628234fc6ae1a53b413725d19b3da9b5c43c2af1e6f3b5aea73f5e5185f20e3053cef3add56b03760b7c5fe90fb7016a1e48da6bfca9cedf8cfa0b5'
+PollingApp::Application.config.secret_key_base = 'b139d7feb1b6824b7b23355e1b1e8f6338fe4308462fbc6f11652fc5ea7c13e85363555a30ace9d89bf28ad7b384058bf14556dae51298d2a8e5036280caf3ed'
